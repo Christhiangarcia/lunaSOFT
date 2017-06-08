@@ -12,6 +12,8 @@ namespace lunaSOFT.FrontEnd
 {
     public partial class frmCargarPedido : Form
     {
+        String soto1;
+        int n = 0;
         public frmCargarPedido()
         {
             InitializeComponent();
