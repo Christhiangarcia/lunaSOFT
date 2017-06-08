@@ -24,7 +24,8 @@ namespace lunaSOFT.FrontEnd
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Que Puto Eres!!!");
+            int a = 0;
+            MessageBox.Show("ALV");
         }
     }
 }
