@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-
+using lunaSOFT.FrontEnd.Login;
 using lunaSOFT.FrontEnd;
 
 namespace lunaSOFT
@@ -15,7 +15,7 @@ namespace lunaSOFT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmLogin());
         }
     }
 }
