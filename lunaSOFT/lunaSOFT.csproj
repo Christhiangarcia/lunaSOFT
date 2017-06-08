@@ -97,6 +97,9 @@
     <EmbeddedResource Include="FrontEnd\frmCargarPedido.resx">
       <DependentUpon>frmCargarPedido.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\frmRegistrarPedido.resx">
+      <DependentUpon>frmRegistrarPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Login\frmAgregarUsuario.resx">
       <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
