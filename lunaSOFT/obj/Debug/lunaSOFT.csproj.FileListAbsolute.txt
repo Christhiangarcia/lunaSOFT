@@ -13,6 +13,11 @@ C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.Pro
 C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.csproj.GenerateResource.Cache
 C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.exe
 C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.pdb
+<<<<<<< HEAD
 C:\Users\Diamond\Desktop\VVV\lunaSOFT\lunaSOFT\bin\Debug\lunaSOFT.exe.config
 C:\Users\Diamond\Desktop\VVV\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.exe
 C:\Users\Diamond\Desktop\VVV\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.pdb
+=======
+C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.FrontEnd.frmCargarPedido.resources
+C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.FrontEnd.frmRegistrarPedido.resources
+>>>>>>> 1edd9e365171533601a802cb634e9a350e33775d

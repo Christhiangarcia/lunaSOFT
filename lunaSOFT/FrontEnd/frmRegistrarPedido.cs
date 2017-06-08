@@ -12,6 +12,8 @@ namespace lunaSOFT.FrontEnd
 {
     public partial class frmRegistrarPedido : Form
     {
+        String soto;
+
         public frmRegistrarPedido()
         {
             InitializeComponent();
