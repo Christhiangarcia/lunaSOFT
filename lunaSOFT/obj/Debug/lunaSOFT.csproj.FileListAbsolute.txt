@@ -12,3 +12,16 @@ C:\Users\ArturoSoto\Desktop\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.Properties.Reso
 C:\Users\ArturoSoto\Desktop\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.csproj.GenerateResource.Cache
 C:\Users\ArturoSoto\Desktop\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.exe
 C:\Users\ArturoSoto\Desktop\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.pdb
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\bin\Debug\lunaSOFT.exe.config
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\bin\Debug\lunaSOFT.exe
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\bin\Debug\lunaSOFT.pdb
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\bin\Debug\MySql.Data.xml
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.FrontEnd.frmCatalogoCliente.resources
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.FrontEnd.Login.frmAgregarUsuario.resources
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.FrontEnd.Login.frmConfirmar.resources
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.frmLogin.resources
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.Properties.Resources.resources
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.csproj.GenerateResource.Cache
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.exe
+C:\Users\Alberto\Desktop\New folder (3)\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.pdb

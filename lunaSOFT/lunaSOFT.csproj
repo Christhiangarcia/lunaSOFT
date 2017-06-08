@@ -51,6 +51,12 @@
     <Compile Include="BackEnd\clsConexion.cs" />
     <Compile Include="BackEnd\DAOClientes\DAOClientes.cs" />
     <Compile Include="BackEnd\DAOLogin\DAOLogin.cs" />
+    <Compile Include="FrontEnd\beto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\beto.Designer.cs">
+      <DependentUpon>beto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrontEnd\Clientes\frmCatalogoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="Pojos\Clientes\pojoClientes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrontEnd\beto.resx">
+      <DependentUpon>beto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Clientes\frmCatalogoCliente.resx">
       <DependentUpon>frmCatalogoCliente.cs</DependentUpon>
     </EmbeddedResource>
