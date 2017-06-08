@@ -26,6 +26,8 @@ namespace lunaSOFT.FrontEnd
         {
             int a = 0;
             MessageBox.Show("ALV");
+
+            MessageBox.Show("ya por favoooooooooooor");
         }
     }
 }
