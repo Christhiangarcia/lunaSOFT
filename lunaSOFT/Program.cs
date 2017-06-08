@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using lunaSOFT.FrontEnd.Login;
+using lunaSOFT.FrontEnd;
 
-namespace WindowsFormsApplication1
+namespace lunaSOFT
 {
     static class Program
     {
@@ -16,7 +15,7 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmLogin());
         }
     }
 }
