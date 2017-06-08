@@ -75,6 +75,12 @@
     <Compile Include="FrontEnd\Login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrontEnd\soto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\soto.Designer.cs">
+      <DependentUpon>soto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pojos\login\pojoLogin.cs" />
     <Compile Include="Pojos\Clientes\pojoClientes.cs" />
     <Compile Include="Program.cs" />
