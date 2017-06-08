@@ -13,3 +13,6 @@ C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.Pro
 C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.csproj.GenerateResource.Cache
 C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.exe
 C:\Users\ArturoSoto\Desktop\GitHub_Luna\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.pdb
+C:\Users\Diamond\Desktop\VVV\lunaSOFT\lunaSOFT\bin\Debug\lunaSOFT.exe.config
+C:\Users\Diamond\Desktop\VVV\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.exe
+C:\Users\Diamond\Desktop\VVV\lunaSOFT\lunaSOFT\obj\Debug\lunaSOFT.pdb
