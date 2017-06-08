@@ -16,5 +16,10 @@ namespace lunaSOFT.FrontEnd
         {
             InitializeComponent();
         }
+
+        private void frmCargarPedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
