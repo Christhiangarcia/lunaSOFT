@@ -75,7 +75,6 @@ namespace lunaSOFT.FrontEnd.Login
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            new frmLogin().Show();
             this.Close();
         }
 
@@ -128,6 +127,8 @@ namespace lunaSOFT.FrontEnd.Login
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            if (txtUsuario.Text != "Usuario" && txtContraseña.Text != "Contraseña")
+            {
             frmConfirmar objConfirmar = new frmConfirmar();
             String user = "", password = "", rol = "";
 
@@ -136,10 +137,13 @@ namespace lunaSOFT.FrontEnd.Login
             rol = "" + cbxRol.SelectedItem;
 
             objConfirmar.recuperarDatos(user, password, rol);
+            objConfirmar.MdiParent = this.MdiParent;   //con esta linea se mete dentro del mdi parent
             objConfirmar.Show();
             this.Close();
-
-
+            }else
+            {
+                MessageBox.Show("Rellene correctamente los campos Usuario y Contraseña!", "Info!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
 
         }
 

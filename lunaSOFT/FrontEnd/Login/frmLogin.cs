@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using lunaSOFT.FrontEnd.Login;
 using MySql.Data.MySqlClient;
 using lunaSOFT.BackEnd;
 using System.Security.Cryptography;
 using System.Text;
+using lunaSOFT.FrontEnd;
 
 namespace lunaSOFT
 {
@@ -13,7 +13,9 @@ namespace lunaSOFT
     {
 
         clsConexion cn = new clsConexion();
+        frmMDIParent objMDIParent = new frmMDIParent();
         MySqlCommand cmd;
+        Boolean exito = false;
 
         public frmLogin()
         {
@@ -129,35 +131,38 @@ namespace lunaSOFT
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-
+            exito = false;
             try
             {
                 cn.abrirConexion();
                 cmd = cn.mysql_Command();
                 cmd.Connection = cn.Con;
+                exito = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al establecer la conexion a la base de datos!", "Info!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al establecer conexion en la base de datos!", "Info!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            if (exito)
+            {
             try
             {
                 String user = txtUsuario.Text;
                 String password = txtContraseña.Text;
                 String usuario = "", contraseña = "", rol = "";
 
-                cmd.CommandText = "select usuario from login where usuario='" + user + "'";
+                cmd.CommandText = "select usuario from login where usuario='" + user + "' and contraseña=sha1("+password+")";
                 if (cmd.ExecuteScalar() != null)
                 {
                     usuario = (cmd.ExecuteScalar().ToString());
                 }
 
-                cmd.CommandText = "select contraseña from login where contraseña='" + encriptarPassword(password)+ "'";
-                if (cmd.ExecuteScalar() != null)
+                    cmd.CommandText = "select contraseña from login where usuario='" + user + "' and contraseña=sha1(" + password + ")";
+                    if (cmd.ExecuteScalar() != null)
                 {
-                    contraseña = ""+(cmd.ExecuteScalar());
-                    
+                    contraseña = "" + (cmd.ExecuteScalar());
+
                 }
 
                 cmd.CommandText = "select rol from login where usuario='" + user + "'";
@@ -168,32 +173,47 @@ namespace lunaSOFT
 
                 cn.cerrarConexion();
 
-                
+
                 if (user == usuario && encriptarPassword(password) == contraseña)
                 {
-                    
+
                     if (rol == "GERENTE ADMINISTRATIVO")
                     {
-                        MessageBox.Show("Bienvenido GERENTE ADMINISTRATIVO");
+                        MessageBox.Show("Bienvenido GERENTE ADMINISTRATIVO","Saludo!",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                        objMDIParent.asignacionDePermisos(true, false, false);//asignacion de permisos
+                        objMDIParent.Show();
+                        this.Hide();
                     }
                     else if (rol == "GERENTE OPERATIVO")
                     {
-                        MessageBox.Show("Bienvenido GERENTE OPERATIVO");
+                        MessageBox.Show("Bienvenido GERENTE OPERATIVO", "Saludo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        objMDIParent.asignacionDePermisos(false, true, false);
+                        objMDIParent.Show();
+                        this.Hide();
+
                     }
                     else if (rol == "OPERATIVO")
                     {
-                        MessageBox.Show("Bienvenido OPERATIVO");
+                        MessageBox.Show("Bienvenido OPERATIVO", "Saludo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        objMDIParent.asignacionDePermisos(false, false, true);
+                        objMDIParent.Show();
+                        this.Hide();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Usuario o Contraseña Invalidos...", "Info!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Usuario o Contraseña Invalidos...", "Info!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ingrese correctamente Usuario y Contraseña!", "Info!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
 
         }
 
@@ -205,21 +225,18 @@ namespace lunaSOFT
             }
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+      
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
-        {
-
-            new frmAgregarUsuario().Show();
-            this.Hide();
-        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
